@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    font-family: sans-serif, Times;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #090979 35%); */
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+/* ===== Navbar Container ===== */
+.nav-container {
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #020f1d;
+    box-shadow: 0px 4px 8px 0px rgba(103, 192, 243, 0.084);
+    position: fixed;
+    top: 0;
+}
+
+.nav-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+.navbar .nav-item {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    margin: 0px 30px 0px 30px;
+}
+
+.nav-item li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.navbar .icon {
+    color: #00d4ff;
+    font-size: 1.5rem;
+}
+
+li a:hover {
+    border-bottom: 5px solid #00d4ff;
+    padding-bottom: 5px;
+}
+
+
+/* Contact me section */
+.btn .click {
+    background-color: #046d82;
+    padding: 17px 16px;
+    border-radius: 5px;
+    color: #ffffff;
+    /* box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.3); */
+}
+
+.btn .click:hover {
+    border-bottom: none;
+    background-color: #00d4ff;
+    color: #4b4949;
+}
+
+/* Hero section: */
+/* styling the hero content, button */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    background: #03152a;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* hero image styling */
+.hero-img img {
+    width: 400px;
+    height: 400px;
+    margin-right: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px 10px rgba(103, 192, 243, 0.607);
+    transition: all 0.7s linear 0.2s ease;
+}
+
+.hero-img img:hover {
+    width: 450px;
+    height: 450px;
+}
+
+/* hero content slyling */
+
+.hero-content {
+    margin-left: 70px;
+    width: 500px;
+}
+
+.hero-content h2 {
+    padding: 4px;
+}
+
+.animie {
+    width: 30ch;
+    font-size: 2rem;
+    text-wrap: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+    animation: typing 2s steps(30) infinite alternate-reverse;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+}
+
+strong {
+    color: #00d4ff;
+}
+
+.hero p {
+    line-height: 28px;
+    font-size: 1rem;
+    text-indent: 30px;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #017187;
+    box-shadow: 0px 0px 18px 8px rgba(147, 244, 255, 0.103);
+    cursor: pointer;
+    /* padding: 12px 40px; */
+}
+
+.hero button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.94rem;
+}
+
+.hero .cv {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* When cv button is hover  */
+
+.hero button:hover  {
+    background-color: #00d4ff;
+    color: #011e3c;
+}
+
+/* Styling the service */
+#service {
+    background: #000627;
+}
+
+#service h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 50px;
+    color: #00d4ff;
+}
+
+#service .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+
+}
+
+/* Service Card  */
+
+.service-item1 {
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #00d5ff00;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 8px 12px 8px 8px rgba(154, 230, 255, 0.1);
+}
+
+.service-item1 h3 {
+    color: #00d4ff;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.service-item1 p {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.service-item1 button {
+    padding: 12px;
+    background-color: #017187;
+}
+
+.service-item1 button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.service-item1 button:hover {
+    background-color: #00d4ff;
+}
+
+
+/* Service card */
+.service-item2 {
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #00d5ff00;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 8px 12px 8px 8px rgba(154, 230, 255, 0.1);
+}
+
+.service-item2 h3 {
+    color: #00d4ff;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.service-item2 p {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.service-item2 button {
+    padding: 12px;
+    background-color: #017187;
+}
+
+.service-item2 button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.service-item2 button:hover {
+    background-color: #00d4ff;
+}
+
+/* Project Gallery */
+
+.project {
+    background-color: #000627;
+    padding-bottom: 100px;
+}
+
+.project h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 50px;
+    color: #00d4ff;
+    margin-bottom: 80px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.gallery img {
+    border: 4px solid #00d4ff;
+    border-radius: 20px;
+
+}
+
+.gallery img:hover {
+    cursor: pointer;
+}
+
+
+
+/* Contact me form */
+.contact {
+    background-color: #03152a;
+    height: 120vh;
+    box-sizing: border-box;
+}
+
+.contact h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 50px;
+    color: #00d4ff;
+    margin-bottom: 80px;
+}
+
+.form-group {
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(113, 227, 255, 0.2);
+    border: 1px solid #00d4ff;
+    margin: auto;
+    width: 30%;
+    height: 80vh;
+}
+
+.form-son {
+    position: relative;
+    margin: 30px 0px 30px 0px;
+}
+
+.form-group input,
+select,
+textarea {
+    width: 90%;
+    padding: 10px 10px 10px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: #000627;
+}
+
+.form-group label {
+    position: absolute;
+    color: #000000;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+    font-size: 1rem;
+    left: 30px;
+}
+
+/* Input Focus when mouse place inside */
+.form-input:focus {
+    border: 3px solid #00d4ff;
+    outline: none;
+}
+
+/* submit button */
+.submit {
+    
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submit button {
+    height: 50px;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color:#017187 ;
+}
+
+.submit button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.submit button:hover {
+    background-color:#00d4ff;
+}
+
+/* footer information */
+.footer {
+    background-color: #000000;
+    height: 60vh;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 30px 0px 0px 0px;
+}
+
+.footer-item .icon h3 {
+    padding: 4px 0px 4px 0px;
+}
+
+/* Quick links item */
+.links h3 {
+    color: #00d4ff;
+}
+.footer-item .links li {
+    padding: 8px 0px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* When Quick is hover on */
+.links li a:hover {
+    border: 2px solid #00d4ff;
+}
+
+/* Contact information */
+.contact-me .me, h3 {
+    padding: 8px 0px;
+    color: #00d4ff;
+}
+
+.contact-me a, .tel {
+    color:#ffffff;
+    padding: 0px 6px;
+    text-decoration: none;
+}
+
+/* Back to Top */
+.contact-me .go-up a {
+    color: #00d4ff;
+    text-decoration: none;
+    padding: 0;
+}
+
+/* When back to top is hover on */
+
+.go-up a:hover {
+    color: #ffffff;
+}
+
+/* copyright info */
+
+.copyright {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1rem;
+}
+
+/* ===============================
+   MEDIA QUERIES FOR RESPONSIVENESS
+   =============================== */
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .hero-img img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #service .service {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .form-group {
+        width: 60%;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav-container .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar .nav-item {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-group {
+        width: 80%;
+    }
+
+    .footer {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Small phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .navbar .icon {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+
+    .hero-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .service-item1,
+    .service-item2 {
+        width: 90%;
+    }
+
+    .form-group {
+        width: 95%;
+    }
+
+    .submit button {
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        margin-top: 40px;
+    }
+}
