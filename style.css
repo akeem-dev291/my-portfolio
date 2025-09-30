@@ -16,7 +16,7 @@ body {
     padding: 8px 12px;
     background-color: #020f1d;
     box-shadow: 0px 4px 8px 0px rgba(103, 192, 243, 0.084);
-    position:relative;
+    position: relative;
     top: 0;
 }
 
@@ -87,13 +87,12 @@ li a:hover {
     margin-right: 70px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px 10px rgba(103, 192, 243, 0.607);
-    transition: all 0.7s infinite ease-out, transform 0.7s ease-out;
+    transition: all 0.5s ease-in-out;
+    /*transition belongs here*/
 }
 
 .hero-img img:hover {
-    width: 450px;
-    height: 450px;
-    transform: translateY(-3px);
+    scale: 1.2;
 }
 
 /* hero content slyling */
@@ -167,7 +166,7 @@ strong {
 
 /* When cv button is hover  */
 
-.hero button:hover  {
+.hero button:hover {
     background-color: #00d4ff;
     color: #011e3c;
 }
@@ -223,6 +222,10 @@ strong {
 .service-item1 button {
     padding: 12px;
     background-color: #017187;
+    transition: all 2s ease-out;
+    box-shadow: 8px 0px 8px 0px rgba(154, 230, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .service-item1 button a {
@@ -232,6 +235,7 @@ strong {
 
 .service-item1 button:hover {
     background-color: #00d4ff;
+    scale: 1.2;
 }
 
 
@@ -263,6 +267,10 @@ strong {
 .service-item2 button {
     padding: 12px;
     background-color: #017187;
+    transition: all 2s ease-out;
+    box-shadow: 8px 0px 8px 0px rgba(154, 230, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .service-item2 button a {
@@ -272,6 +280,7 @@ strong {
 
 .service-item2 button:hover {
     background-color: #00d4ff;
+    scale: 1.2;
 }
 
 /* Project Gallery */
@@ -366,13 +375,21 @@ textarea {
 
 /* Input Focus when mouse place inside */
 .form-input:focus {
-    border: 3px solid #00d4ff;
+    border: 2px solid #00d4ff;
     outline: none;
+}
+
+.form-input:user-valid {
+    border: 2px solid #00d4ff;
+}
+
+.form-input:user-invalid {
+    border: 2px solid #ff0000;
 }
 
 /* submit button */
 .submit {
-    
+
     margin-bottom: 20px;
     text-align: center;
 }
@@ -382,7 +399,7 @@ textarea {
     width: 90%;
     border-radius: 20px;
     cursor: pointer;
-    background-color:#017187 ;
+    background-color: #017187;
 }
 
 .submit button a {
@@ -394,7 +411,7 @@ textarea {
 }
 
 .submit button:hover {
-    background-color:#00d4ff;
+    background-color: #00d4ff;
 }
 
 /* footer information */
@@ -418,6 +435,7 @@ textarea {
 .links h3 {
     color: #00d4ff;
 }
+
 .footer-item .links li {
     padding: 8px 0px;
 }
@@ -433,13 +451,15 @@ textarea {
 }
 
 /* Contact information */
-.contact-me .me, h3 {
+.contact-me .me,
+h3 {
     padding: 8px 0px;
     color: #00d4ff;
 }
 
-.contact-me a, .tel {
-    color:#ffffff;
+.contact-me a,
+.tel {
+    color: #ffffff;
     padding: 0px 6px;
     text-decoration: none;
 }
