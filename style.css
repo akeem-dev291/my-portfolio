@@ -87,7 +87,7 @@ li a:hover {
     margin-right: 70px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px 10px rgba(103, 192, 243, 0.607);
-    transition: all 0.7s infinite ease-out;
+    transition: all 0.7s infinite ease-out, transform 0.7s ease-out;
 }
 
 .hero-img img:hover {
