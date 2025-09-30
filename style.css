@@ -16,7 +16,7 @@ body {
     padding: 8px 12px;
     background-color: #020f1d;
     box-shadow: 0px 4px 8px 0px rgba(103, 192, 243, 0.084);
-    position: fixed;
+    position:relative;
     top: 0;
 }
 
